@@ -1,0 +1,14 @@
+@use './src/global/fonts';
+@use './src/global/colors';
+@use './src/global/mixins/base-font' ;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include base-font.baseFont;
+    color: colors.$textColor;
+    font-size: 18px;
+    font-weight: 400;
+}

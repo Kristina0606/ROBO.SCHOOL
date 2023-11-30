@@ -11,5 +11,8 @@
   "devDependencies": {
     "sass": "^1.69.5",
     "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "reset-css": "^5.0.2"
   }
 }

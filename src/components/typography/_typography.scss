@@ -1,0 +1,14 @@
+@use '../../global/mixins/base-font';
+
+h1 {
+    @include base-font.baseFont;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+h2 {
+    @include base-font.baseFont;
+    font-size: 50px;
+    font-weight: 600;
+}
+
