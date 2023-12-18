@@ -1,0 +1,28 @@
+@use '../../global/colors';
+@use '../../global/fonts';
+
+.app-header {
+    background-color: colors.$dark;
+    padding-top: 30px;
+
+    &__components {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin-left: 70px;
+    }
+
+    &__set-of-links {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    &__tel {
+        margin-right: 70px;
+    }
+}

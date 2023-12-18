@@ -1,0 +1,22 @@
+@use '../../global/colors';
+
+.first-page {
+    background-color: colors.$dark;
+    display: flex;
+
+    &__main-info {
+        margin-left: 200px;
+        margin-top: 194px;
+
+        &__p {
+                margin-top: 20px;
+            }
+
+        &__btn {
+            margin-top: 50px;
+        }
+    }
+}
+
+
+

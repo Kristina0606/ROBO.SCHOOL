@@ -1,66 +1,111 @@
+@use '../../global/colors';
+
 .title-h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 600;
     line-height: 160%;
     font-family: 'Jost';
     font-style: normal;
+    color: colors.$white;
 }
 
 .title-h2 {
     font-family: 'Jost';
     font-style: normal;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 600;
     line-height: 160%;
-}
-
-.title-h3 {
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 160%;
-    font-family: 'Jost';
-    font-style: normal;
-}
-
-.title-h4 {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 130%;
-    font-family: 'Jost';
-    font-style: normal;
-}
-
-.title-h5 {
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 160%;
-    font-family: 'Jost';
-    font-style: normal;
+    color: colors.$red;
 }
 
 .title-in-the-corner {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 160%;
     font-family: 'Jost';
     font-style: normal;
+    color: colors.$white;
+    text-decoration: none;
+}
+
+.title-h4 {
+    color: colors.$dark;
+    font-family: Jost;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.title-h4-2 {
+    color: colors.$dark;
+    font-family: Jost;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.title-h5 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 160%;
+    font-family: 'Jost';
+    font-style: normal;
+    color: colors.$white;
+    text-decoration: none;
 }
 
 .title-h6 {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 130%;
-    font-family: 'Jost';
-    font-style: normal;
-}
-
-.title-h7 {
     font-size: 18px;
     font-weight: 400;
     line-height: 160%;
     font-family: 'Jost';
     font-style: normal;
+    text-decoration: none;
+    color: colors.$white;
+
 }
+
+.title-h6-2 {
+    color: colors.$textColor;
+    font-family: Jost;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.title-h6-3 {
+    color: colors.$dark;
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.title-h7 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+    font-family: 'Jost';
+    font-style: normal;
+    color: colors.$white;
+}
+
+
+
+.title-h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 160%;
+    font-family: 'Jost';
+    font-style: normal;
+    color: colors.$dark;
+}
+
+
 
 .title-h8 {
     font-size: 16px;

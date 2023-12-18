@@ -1,0 +1,11 @@
+@use '../../global/colors';
+
+.base-btn {
+    background-color: colors.$red;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 49px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
