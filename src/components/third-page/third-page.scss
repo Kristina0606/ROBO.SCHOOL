@@ -1,0 +1,22 @@
+@use '../../global/colors';
+
+.third-page {
+    background-color: colors.$background-3;
+
+    &__title {
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+
+         &__statement {
+             margin-bottom: 100px;
+
+             &__title {
+                margin-bottom: 15px;
+             }
+         }
+
+         &__image {
+            margin-left: 10px;
+         }
+}
