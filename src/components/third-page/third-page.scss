@@ -8,6 +8,22 @@
         margin-bottom: 60px;
     }
 
+    #pop-up {
+        position: relative;
+
+        &:hover #more-info {
+            display: block;
+            position: absolute;
+            top: -70px;
+            left: 100px;
+            border: 1px solid colors.$white;
+            box-shadow: 0 2px 8px colors.$shadowColor;
+            border-radius: 5px;
+            background-color: colors.$white;
+            padding: 15px 20px;
+        }
+    }
+
          &__statement {
              margin-bottom: 100px;
 
@@ -19,4 +35,14 @@
          &__image {
             margin-left: 10px;
          }
+
+         #more-info {
+            display: none;
+         }
+
+         &__p {
+            font-size: 14px;
+            color: colors.$dark;
+         }
 }
+

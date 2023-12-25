@@ -1,0 +1,47 @@
+@use '../../global/colors';
+
+
+
+.dialog-modal {
+    border-radius: 15px;
+    background: colors.$white;
+    width: 626px;
+    height: 512px;
+    border: none;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.modal-name {
+    margin-bottom: 10px;
+}
+
+.icons {
+    cursor: pointer;
+}
+
+.about-modal {
+    margin-bottom: 10px;
+}
+
+.show-modal {
+    cursor: pointer;
+}
+
+.close-modal {
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.modal-image {
+    width: 100%;
+    max-width: 128px;
+    height: 178px;
+}
+

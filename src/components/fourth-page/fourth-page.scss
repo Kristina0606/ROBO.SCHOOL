@@ -1,0 +1,93 @@
+// @use '../../global/colors';
+
+// .fourth-page {
+//     background-color: colors.$white;
+
+//     &__title {
+//         padding-top: 100px;
+//         margin-bottom: 50px;
+//         margin-left: 150px;
+//     }
+
+//     &__cards {
+//         display: flex;
+//         flex-direction: row;
+//         gap: 60px;
+//         margin-left: 250px;
+
+//         .teacher-name {
+//             margin-top: 15px;
+//             margin-bottom: 10px;
+//         }
+//     }
+
+//     &__slide-buttons {
+//         display: flex;
+//         margin-top: 50px;
+//         justify-content: center;
+//         gap: 40px;
+//     };
+    
+// }
+
+@use '../../global/colors';
+
+.fourth-page {
+    background-color: colors.$white;
+
+
+    &__title {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        margin-left: 275px;
+    }
+
+    #slider-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #slides-1 {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    #slides-2 {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        transition: transform 0.5s ease-in-out;
+        margin-left: 1100px;
+
+    }
+
+    .card-slider {
+        width: 288px;
+        box-sizing: border-box;
+    }
+
+
+    .hidden {
+        display: none;
+    }
+
+    .about-teacher {
+        border: none;
+    }
+
+        .teacher-name {
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+    
+    
+        &__slide-buttons {
+            display: flex;
+            margin-top: 50px;
+            justify-content: center;
+            gap: 40px;
+            cursor: pointer;
+        }
+        }

@@ -85,6 +85,16 @@
     line-height: 160%;
 }
 
+.title-h6-4 {
+    text-decoration: none;
+    color: colors.$red;
+    font-family: Jost;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
 .title-h7 {
     font-size: 15px;
     font-weight: 400;
@@ -92,6 +102,15 @@
     font-family: 'Jost';
     font-style: normal;
     color: colors.$white;
+}
+
+.title-h7-2 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+    font-family: 'Jost';
+    font-style: normal;
+    color: colors.$dark;
 }
 
 
@@ -103,6 +122,42 @@
     font-family: 'Jost';
     font-style: normal;
     color: colors.$dark;
+}
+
+.title-h3-2 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 160%;
+    font-family: 'Jost';
+    font-style: normal;
+    color: colors.$dark;
+}
+
+.title-h3-3 {
+    color: colors.$white;
+    font-family: Jost;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.title-h3-4 {
+    color: colors.$white;
+    font-family: Jost;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.title-h3-5 {
+    color: colors.$white500;
+    font-family: Jost;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
 }
 
 

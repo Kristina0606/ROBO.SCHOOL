@@ -1,0 +1,78 @@
+@use '../../global/colors';
+
+input[type="text"] {
+    padding-left: 10px;
+    width: 333px;
+    height: 43px;
+    border: none;
+    border-radius: 5px;
+    background: #F6F6F6;
+}
+
+input[type="tel"] {
+    padding-left: 10px;
+    width: 333px;
+    height: 43px;
+    border: none;
+    border-radius: 5px;
+    background: #F6F6F6;
+}
+
+input[type="email"] {
+    padding-left: 10px;
+    width: 333px;
+    height: 43px;
+    border: none;
+    border-radius: 5px;
+    background: #F6F6F6;
+}
+
+.six-page_btn {
+    border-radius: 5px;
+    background: colors.$dark;
+    width: 100%;
+    max-width: 333px;
+    height: 43px;
+    border: none;
+    cursor: pointer;
+}
+
+.six-page {
+    background-color: colors.$red;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 120px;
+    // padding-top: 100px;
+    padding: 68px 350px;
+    position: relative;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        z-index: 10;
+    }
+
+    &__title-info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__vectors-images {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .vector-1 {
+        width: 100%;
+        height: 70px;
+    }
+
+    .vector-2 {
+        height: 70px;
+    }
+}
