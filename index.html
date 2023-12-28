@@ -26,6 +26,31 @@
         <a href="tel:+78000001122" class="app-header__tel title-h5"
           >+7 800 000 11 22</a
         >
+        <!-- <div class="app-header__for-mobile">
+          <img
+            src="/images/all-icons/Telephone.png"
+            class="app-header__telephone-icon"
+            alt="call"
+          />
+          <img
+            src="/images/all-icons/Burger.png"
+            class="app-header__burger-icon open"
+            onclick="actionWithBurgerMenu()"
+            alt="burger"
+          /> -->
+          <div class="app-header__for-mobile">
+              <img src="/images/all-icons/Telephone.png" class="app-header__telephone-icon" alt="call">
+              <img src="/images/all-icons/Burger.png" id="burger-menu"
+                 onclick="actionWithBurgerMenu()" alt="burger">
+          </div>
+          <div id="burger-content">
+            <ul>
+              <li><a class="first-page__main-info__h1 title-h1" href="#first-page">О школе</a></li>
+              <li><a class="first-page__main-info__h1 title-h1" href="#coaches">Тренеры</a></li>
+              <li><a class="first-page__main-info__h1 title-h1" href="#first-page">Стоимость</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -38,7 +63,7 @@
             для педагогов начальной школы
           </p>
           <button
-            class="first-page__main-info__btn glow-on-hover"
+            class="first-page__main-info__btn glow-on-hover-main"
             type="button"
           >
             <span class="title-h7">Записаться на курс</span>
@@ -46,10 +71,6 @@
         </div>
 
         <img
-          width="603px"
-          ;
-          height="737px"
-          ;
           src="/images/people/header-girl.png"
           alt="header-girl"
           class="first-page__image"
@@ -155,113 +176,8 @@
           </div>
         </div>
       </div>
+
       <!-- <div class="fourth-page" id="coaches">
-        <h3 class="fourth-page__title title-h3">Профессиональные тренеры</h3>
-        <div class="fourth-page__cards">
-          <div class="cards-element card-1">
-            <figure>
-              <img
-                src="/images/people/IrinaLime.png"
-                alt="teacher-1"
-                width="288px"
-                height="400px"
-              />
-              <figcaption class="teacher-name title-h6-3">
-                Ирина Лайм
-              </figcaption>
-            </figure>
-            <p class="teacher-info title-h6-2">
-              преподаватель по робототехнике
-            </p>
-            <a href="#" class="about-teacher title-h6-4">Подробнее</a>
-          </div>
-
-          <div class="cards-element card-2">
-            <figure>
-              <img
-                src="/images/people/MarinaOrlova.png"
-                alt="teacher-2"
-                width="288px"
-                height="400px"
-              />
-              <figcaption class="teacher-name title-h6-3">
-                Марина Орлова
-              </figcaption>
-            </figure>
-            <p class="teacher-info title-h6-2">
-              преподаватель по робототехнике
-            </p>
-            <a href="#" class="about-teacher title-h6-4">Подробнее</a>
-          </div>
-
-          <div class="cards-element card-3">
-            <figure>
-              <img
-                src="/images/people/MaximPetrov.png"
-                alt="teacher-3"
-                width="288px"
-                height="400px"
-              />
-              <figcaption class="teacher-name title-h6-3">
-                Максим Петров
-              </figcaption>
-            </figure>
-            <p class="teacher-info title-h6-2">
-              преподаватель по программированию
-            </p>
-            <a href="#" class="about-teacher title-h6-4">Подробнее</a>
-          </div>
-
-          <div class="cards-element card-4">
-            <figure>
-              <img
-                src="./public/images/people/KonstantinNazarov.png"
-                alt="teacher-4"
-                width="288px"
-                height="400px"
-              />
-              <figcaption class="teacher-name title-h6-3">
-                Константин Назаров
-              </figcaption>
-            </figure>
-            <p class="teacher-info title-h6-2">
-              преподаватель по робототехнике
-            </p>
-            <a href="#" class="about-teacher title-h6-4">Подробнее</a>
-          </div>
-
-          <div class="cards-element card-5">
-            <figure>
-              <img
-                src="/images/people/LizaVesennyaya.png"
-                alt="teacher-5"
-                width="288px"
-                height="400px"
-              />
-              <figcaption class="teacher-name title-h6-3">
-                Лиза Весенняя
-              </figcaption>
-            </figure>
-            <p class="teacher-info title-h6-2">
-              преподаватель по программированию
-            </p>
-            <a href="#" class="about-teacher title-h6-4">Подробнее</a>
-          </div>
-        </div>
-        <div class="fourth-page__slide-buttons">
-          <img
-            src="/images/all-icons/Left Circle.svg"
-            alt="pref-button"
-            class="pref-button"
-          />
-          <img
-            src="/images/all-icons/Right Circle.svg"
-            alt="next-button"
-            class="next-button"
-          />
-        </div>
-      </div> -->
-      <div class="fourth-page" id="coaches">
         <h3 class="fourth-page__title title-h3">Профессиональные тренеры</h3>
         <div class="fourth-page__cards" id="slider-container">
           <div class="fourth-page__cards-group" id="slides-1">
@@ -301,6 +217,200 @@
               <a class="about-teacher title-h6-4">Подробнее</a>
             </div>
 
+            <div class="cards-element card-slider">
+              <figure>
+                <img
+                  src="/images/people/MaximPetrov.png"
+                  alt="teacher-3"
+                  width="288px"
+                  height="400px"
+                />
+                <figcaption class="teacher-name title-h6-3">
+                  Максим Петров
+                </figcaption>
+              </figure>
+              <p class="teacher-info title-h6-2">
+                преподаватель по программированию
+              </p>
+              <a class="about-teacher title-h6-4">Подробнее</a>
+            </div>
+          </div>
+          <div class="fourth-page__cards-group" id="slides-2">
+            <div class="cards-element card-slider hidden">
+              <figure>
+                <img
+                  src="./public/images/people/KonstantinNazarov.png"
+                  alt="teacher-4"
+                  width="288px"
+                  height="400px"
+                />
+
+                <figcaption class="teacher-name title-h6-3">
+                  Константин Назаров
+                </figcaption>
+              </figure>
+              <p class="teacher-info title-h6-2">
+                преподаватель по робототехнике
+              </p>
+              <a class="about-teacher title-h6-4">Подробнее</a>
+            </div>
+            <div class="cards-element card-slider hidden">
+              <figure>
+                <img
+                  src="/images/people/LizaVesennyaya.png"
+                  alt="teacher-5"
+                  width="288px"
+                  height="400px"
+                />
+                <figcaption class="teacher-name title-h6-3">
+                  Лиза Весенняя
+                </figcaption>
+              </figure>
+              <p class="teacher-info title-h6-2">
+                преподаватель по программированию
+              </p>
+              <a class="about-teacher title-h6-4">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="fourth-page__slide-buttons">
+          <img
+            src="/images/all-icons/Left Circle.svg"
+            alt="pref-button"
+            onclick="prevSlide()"
+          />
+          <img
+            src="/images/all-icons/Right Circle.svg"
+            alt="next-button"
+            onclick="nextSlide()"
+          />
+        </div>
+      </div> -->
+
+      <div class="fourth-page" id="coaches">
+        <h3 class="fourth-page__title title-h3">Профессиональные тренеры</h3>
+        <div class="fourth-page__cards" id="slider-container">
+          <div class="fourth-page__cards-group" id="slides-1">
+            <div class="cards-element card-slider">
+              <figure>
+                <img
+                  src="/images/people/IrinaLime.png"
+                  alt="teacher-1"
+                  width="288px"
+                  height="400px"
+                />
+                <figcaption class="teacher-name title-h6-3">
+                  Ирина Лайм
+                </figcaption>
+              </figure>
+              <p class="teacher-info title-h6-2">
+                преподаватель по робототехнике
+              </p>
+
+              <a class="about-teacher title-h6-4">Подробнее</a>
+            </div>
+
+            <div class="cards-element card-slider">
+              <figure>
+                <img
+                  src="/images/people/MarinaOrlova.png"
+                  alt="teacher-2"
+                  width="288px"
+                  height="400px"
+                />
+                <figcaption class="teacher-name title-h6-3">
+                  Марина Орлова
+                </figcaption>
+              </figure>
+              <p class="teacher-info title-h6-2">
+                преподаватель по робототехнике
+              </p>
+              <dialog style="padding: 0" class="dialog-modal">
+                <div id="modal-box" style="padding: 1rem" class="modal-box">
+                  <div class="modal-content">
+                    <img
+                      src="/images/people/MarinaOrlova.png"
+                      alt="teacher-Marina"
+                      class="modal-image"
+                    />
+                    <div class="modal-about-teacher">
+                      <div class="modal-name title-h6-3">Марина Орлова</div>
+                      <div class="about-modal title-h6-2">
+                        преподаватель по робототехнике
+                      </div>
+                      <img
+                        src="/images/all-icons/Facebook.svg"
+                        alt="Facebook-icon"
+                        class="Facebook-icon icons"
+                      />
+                      <img
+                        src="./public/images/all-icons/Instagram.svg"
+                        alt="Instagram-icon"
+                        class="Instagram-icon icons"
+                      />
+                    </div>
+                    <a id="close-modal-btn" class="title-h6-2 close-modal"
+                      >Закрыть</a
+                    >
+                  </div>
+                  <div class="modal-trigger-buttons">
+                    <button
+                      onclick="showInfo('info1')"
+                      class="modal-button"
+                      onmouseenter="highlightButton(this)"
+                      onmouseleave="unhighlightButton(this)"
+                    >
+                      <span class="title-h7-3">Образование</span>
+                    </button>
+                    <button
+                      onclick="showInfo('info2')"
+                      class="modal-button"
+                      onmouseenter="highlightButton(this)"
+                      onmouseleave="unhighlightButton(this)"
+                    >
+                      <span class="title-h7-3">Опыт работы</span>
+                    </button>
+                    <button disabled class="modal-button">
+                      <span class="title-h7-3">Награды</span>
+                    </button>
+                  </div>
+                  <div
+                    id="info1"
+                    class="info-modal-container active title-h7-2"
+                  >
+                    <p>
+                      Сентябрь 1995 — Июнь 2000 Санкт-Петербургский
+                      политехнический университет Петра Великого Факультет:
+                      Компьютерных наук и технологий Специальность: Математика и
+                      компьютерные науки Форма обучения: Очная
+                    </p>
+                    <p>Курсы и тренинги</p>
+                    <p>
+                      Ноябрь 2020 — Февраль 2021 Программа дополнительного
+                      образования «3D Моделирование»
+                    </p>
+                  </div>
+
+                  <div id="info2" class="info-modal-container title-h7-2">
+                    <p>
+                      Разработка технологической документации (технологические
+                      указания, маршрутные карты, технические требования,
+                      инструкции и др.).
+                    </p>
+
+                    <p>
+                      Участие в разработке и внедрении новых технологий и
+                      материалов.
+                    </p>
+                    <p>
+                      Участие в разработке и внедрении новых видов продукции (в
+                      том числе противопожарных деревянных дверей).
+                    </p>
+                  </div>
+                </div>
+              </dialog>
+              <a class="show-modal title-h6-4" id="show-modal-btn">Подробнее</a>
+            </div>
             <div class="cards-element card-slider">
               <figure>
                 <img
@@ -369,6 +479,7 @@
           />
         </div>
       </div>
+
       <div class="fifth-page" id="price">
         <h3 class="fifth-page__title title-h3">Выберите нужный пакет</h3>
         <div class="fifth-page__cards">
@@ -394,6 +505,7 @@
           </div>
         </div>
       </div>
+
       <div class="six-page">
         <div class="six-page__title-info">
           <div class="six-page__title title-h3-3">
@@ -404,10 +516,10 @@
           </div>
         </div>
         <form class="six-page__info">
-          <input type="text" placeholder="Имя" />
-          <input type="tel" placeholder="Телефон" />
-          <input type="email" placeholder="E-mail" />
-          <button class="six-page_btn" type="submit">
+          <input class="six-page__input" type="text" placeholder="Имя" />
+          <input class="six-page__input" type="tel" placeholder="Телефон" />
+          <input class="six-page__input" type="email" placeholder="E-mail" />
+          <button class="six-page_btn" type="reset">
             <span class="title-h7">Оформить заявку</span>
           </button>
         </form>
@@ -424,6 +536,7 @@
           />
         </div>
       </div>
+
       <footer class="footer">
         <div class="footer__left">
           <a href="index.html" class="footer_logo title-in-the-corner"
@@ -437,36 +550,6 @@
           >
         </div>
       </footer>
-
-      <dialog style="padding: 0" class="dialog-modal">
-        <div id="modal-box" style="padding: 1rem" class="modal-box">
-          <div class="modal-content">
-            <img
-              src="/images/people/MarinaOrlova.png"
-              alt="teacher-Marina"
-              class="modal-image"
-            />
-            <div class="modal-about-teacher">
-              <div class="modal-name title-h6-3">Марина Орлова</div>
-              <div class="about-modal title-h6-2">
-                преподаватель по робототехнике
-              </div>
-              <img
-                src="/images/all-icons/Facebook.svg"
-                alt="Facebook-icon"
-                class="Facebook-icon icons"
-              />
-              <img
-                src="./public/images/all-icons/Instagram.svg"
-                alt="Instagram-icon"
-                class="Instagram-icon icons"
-              />
-            </div>
-            <a id="close-modal-btn" class="title-h6-2 close-modal">Закрыть</a>
-          </div>
-        </div>
-      </dialog>
-      <a class="show-modal title-h6-4" id="show-modal-btn">Подробнее</a>
     </main>
     <script type="module" src="/main.js"></script>
   </body>

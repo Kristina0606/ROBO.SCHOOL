@@ -1,6 +1,6 @@
 @use '../../global/colors';
 
-.glow-on-hover {
+.glow-on-hover-main {
     width: 260px;
     height: 79px;
     border: none;
@@ -10,6 +10,60 @@
     cursor: pointer;
     position: relative;
     z-index: 0;
+    border-radius: 5px;
+}
+
+.glow-on-hover {
+    width: 260px;
+    height: 60px;
+    border: none;
+    outline: none;
+    color: colors.$white;
+    background: colors.$red;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+}
+
+.glow-on-hover-main:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover-main:active {
+    color: colors.$red
+}
+
+.glow-on-hover-main:active:after {
+    background: transparent;
+}
+
+.glow-on-hover-main:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover-main:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: colors.$red;
+    left: 0;
+    top: 0;
     border-radius: 5px;
 }
 
@@ -66,4 +120,41 @@
     100% {
         background-position: 0 0;
     }
+}
+
+@media screen and (max-width: 320px) {
+    .glow-on-hover-main {
+        width: 300px;
+        height: 60px;
+    }
+
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 260px;
+        height: 60px;
+        background: colors.$red;
+        left: 0;
+        top: 0;
+        border-radius: 5px;
+    }
+
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: 260px;
+        height: 60px;
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+
 }

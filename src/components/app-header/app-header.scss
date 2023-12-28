@@ -25,4 +25,103 @@
     &__tel {
         margin-right: 70px;
     }
+    
+    &__for-mobile {
+            display: none;
+    }
+
+    &__burger-menu {
+            display: none;
+        }
+    
+    #burger-content {
+            display: none;
+        }
+
 }
+
+@media screen and (max-width: 320px) {
+    .app-header {
+        padding: 10px 10px 0px;
+    }
+
+    .app-header__components {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 66px;
+
+        .app-header__logo {
+            margin: 0;
+        }
+
+        .app-header__telephone-icon {
+            width: 44px;
+            height: 44px;
+            cursor: pointer;
+        }
+
+        .app-header__burger-icon {
+            width: 44px;
+            height: 44px;
+            cursor: pointer;
+        }
+
+        .app-header__set-of-links {
+            display: none;
+        }
+
+        .app-header__tel {
+            display: none;
+        }
+
+        .app-header__for-mobile {
+            display: block;
+            gap: 10px;
+        }
+
+        #burger-content {
+            display: block;
+            z-index: 1;
+            min-width: 100%;
+            min-height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+            text-align: center;
+            padding-top: 200px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #burger-content.overlay {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 54px;
+            background-color: colors.$dark;
+        }
+
+        #burger-content ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #burger-content li {
+            list-style: none;
+        }
+
+        #burger-content a {
+            color: #fff;
+            display: block;
+            font-size: 30px;
+            text-decoration: none;
+        }
+    }
+}
+
+
+

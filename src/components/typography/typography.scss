@@ -113,6 +113,14 @@
     color: colors.$dark;
 }
 
+.title-h7-3 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+    font-family: 'Jost';
+    font-style: normal;
+}
+
 
 
 .title-h3 {
@@ -168,4 +176,67 @@
     line-height: 160%;
     font-family: 'Jost';
     font-style: normal;
+}
+
+@media screen and (max-width: 320px) {
+    .title-h1 {
+        font-size: 30px;
+    }
+
+    .title-h2 {
+        font-size: 60px;
+    }
+
+    .title-in-the-corner {
+        font-size: 18px;
+    }
+
+    .title-h4 {
+        font-size: 20px;
+    }
+
+    .title-h4-2 {
+        font-size: 20px;
+    }
+
+    .title-h5 {
+        font-size: 16px;
+    }
+
+    .title-h6 {
+        font-size: 16px;
+    }
+
+    .title-h6-2 {
+        font-size: 16px;
+    }
+
+    .title-h6-3 {
+        font-size: 20px;
+    }
+
+    .title-h6-4 {
+        font-size: 16px;
+    }
+
+    .title-h7 {
+        font-size: 16px;
+    }
+
+    .title-h3 {
+        font-size: 30px;
+    }
+
+    .title-h3-3 {
+        font-size: 30px;
+    }
+
+    .title-h3-4 {
+        font-size: 16px;
+    }
+
+    .title-h3-5 {
+        font-size: 14px;
+    }
+
 }

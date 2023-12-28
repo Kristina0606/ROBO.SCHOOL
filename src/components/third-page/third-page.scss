@@ -46,3 +46,31 @@
          }
 }
 
+@media screen and (max-width: 320px) {
+    .third-page__title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .third-page__statement {
+        margin-bottom: 0;
+    }
+
+    #pop-up {
+        position: relative;
+        padding-bottom: 52px;
+
+        &:hover #more-info {
+            display: block;
+            position: absolute;
+            top: -70px;
+            right: 100px;
+            border: 1px solid colors.$white;
+            box-shadow: 0 2px 8px colors.$shadowColor;
+            border-radius: 5px;
+            background-color: colors.$white;
+            padding: 15px 20px;
+        }
+    }
+}
+

@@ -8,6 +8,8 @@
     width: 626px;
     height: 512px;
     border: none;
+    outline: none;
+
 }
 
 .modal-content {
@@ -16,6 +18,12 @@
     gap: 35px;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+.modal-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .modal-name {
@@ -43,5 +51,28 @@
     width: 100%;
     max-width: 128px;
     height: 178px;
+}
+
+
+.info-modal-container {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.modal-button {
+    border: none;
+    outline: none;
+    background-color: colors.$white;
+    cursor: pointer;
+}
+
+.modal-trigger-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
 }
 
